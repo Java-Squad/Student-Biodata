@@ -2,8 +2,31 @@ import java.util.Scanner;
 
 class Sample
 {
+	public String getFaname() {
+		return faname;
+	}
+	public void setFaname(String faname) {
+		this.faname = faname;
+	}
+	public String getMname() {
+		return mname;
+	}
+	public void setMname(String mname) {
+		this.mname = mname;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	
+	
 	public String fname;
 	public String lname;
+	public String faname;
+	public String mname;
+	public String gender;
 	public int age;
 	public String place;
 	
@@ -47,6 +70,12 @@ class Generate
 		System.out.println("");
 		System.out.println("Student  Last Name                                     "+s.getLname());
 		System.out.println("");
+		System.out.println("Father Name                                            "+s.getFaname());
+		System.out.println(" ");
+		System.out.println("Mother Name                                            "+s.getMname());
+		System.out.println(" ");
+		System.out.println("Gender                                                 "+s.getGender());
+		System.out.println(" ");
 		System.out.println("Student  Age                                           "+s.getAge());
 		System.out.println("");
 		System.out.println("Place                                                  "+s.getPlace());
@@ -82,7 +111,7 @@ class Frame
 	System.out.println(" ");
 	double marks[]=new double[n];
 	
-	String []sub= {"Maths","Chemistry","Physics","Telugu","Social"};
+	String []sub= {"ENGLISH","SANSKRIT","MATHEMATICS","CHEMISTRY","PHYSICS","TELUGU","SOCIAL"};
 	
 	for(int i=0;i<n;i++)
 	{
@@ -94,7 +123,7 @@ class Frame
 	System.out.println("                               Subject Marks");
 	System.out.println(" ");
 	System.out.println(" ");
-	for(int i=0;i<marks.length;i++)
+	for(int i=0;i<7;i++)
 	{
 		
 		System.out.println(                            sub[i]+ "  Marks " +marks[i]);
@@ -141,10 +170,10 @@ class Frame
 	{
 		System.out.println("Fail");
 	}
-	}
-	public static void stotedata()
-	{
-		
+	
+	System.out.println("Successfully Complete the Degree");
+	System.out.println("   ");
+	System.out.println("All the best for future ");
 	}
 		
 	
@@ -166,42 +195,62 @@ public class School {
 
 		Scanner sc=new Scanner(System.in);
 		
-		System.out.print("Enter the First Name                                          ");
+		System.out.print("Enter First Name                                        ");
 		String fname=sc.nextLine();
 		System.out.println("");
 		
 		System.out.println("");
 		System.out.println("");
 		
-		System.out.print("Enter the Last Name                                            ");
+		System.out.print("Enter Last Name                                         ");
 		String lname=sc.nextLine();
 		
-System.out.println("");
+		System.out.println(" ");
+		System.out.println(" ");
+		System.out.println(" ");
+		System.out.print("Enter Father's Name                                     ");
+		String faname=sc.nextLine();
 		
+		System.out.println(" ");
+		System.out.println("");
+		System.out.println(" ");
+		System.out.print("Enter Mother's Name                                     ");
+		String mname=sc.nextLine();
+		System.out.println(" ");
 		System.out.println("");
 		System.out.println("");
 		
-		System.out.print("Enter the Age                                                   ");
+		System.out.print("Enter Gender                                             ");
+		String gender=sc.next();
+		System.out.println(" ");
+		System.out.println(" ");
+		System.out.println(" ");
+		System.out.print("Enter the Age                                            ");
 		int age=sc.nextInt();
 		
-System.out.println("");
+        System.out.println("");
 		
 		System.out.println("");
 		System.out.println("");
 		
-		System.out.print("Enter the Place                                                 ");
+		System.out.print("Enter the Place                                          ");
 		String place=sc.next();
 		
 		Sample s=new Sample();
 		s.setFname(fname);
 		s.setLname(lname);
+		s.setFaname(faname);
+		s.setMname(mname);
+		s.setGender(gender);
 		s.setAge(age);
 		s.setPlace(place);
+		
 		
 		Generate g=new Generate();
 		g.school(s);
 		
-		f.marks();
+		f.marks();	
+		
 	}
 
 }
