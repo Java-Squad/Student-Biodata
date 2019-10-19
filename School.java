@@ -96,7 +96,8 @@ class Generate
 class Frame
 
 {
-	double sum=0;
+	static double sum=0;
+	static double average=0;
 	static
 	{
 	
@@ -104,7 +105,7 @@ class Frame
 		System.out.println("");
 		System.out.println("                       STUDENT MARKS SHEET INTERMEDIATE");
 		
-		System.out.println("________________________________________________________________________________________________");
+		System.out.println("_____________________________________________________________________________________");
 		System.out.println("");
 		System.out.println("");
 	}
@@ -145,46 +146,61 @@ class Frame
 		
 	}
 	
-	double average=0;
+	
 	for(int i=0;i<marks.length;i++)
 	{
-		average=average+marks[i]/n;
+		sum=sum+marks[i];
+		average=sum/n;
 	}
+	
+
+	System.out.println("Total Marks "+sum);
+	
 	
 	System.out.println(" ");
 	System.out.println("Percentage "+average);
 	System.out.println(" ");
 	
+	
+	
 	if(average>=85)
 	{
-		System.out.println("S Grade");
+		System.out.println("S Grade with Distinction");
+		System.out.println("  ");
+		System.out.println("Successfully Completed");
 	}
 	else if(average<85&& average>=75)
     {
-		System.out.println("A Grade");
+		System.out.println("A Grade with First Class");
+		System.out.println("  ");
+		System.out.println("Successfully Completed");
     }
 	
 	else if(average<75 && average>=65)
 
 	{
-		System.out.println("B Grade");
+		System.out.println("B Grade with Second Class");
+		System.out.println("  ");
+		System.out.println("Successfully Completed");
 	}
 	
 	else if(average<65 && average>=55)
 	{
-		System.out.println("C Grade");
+		System.out.println("C Grade with Third Class");
+		System.out.println("  ");
+		System.out.println("Successfully Completed");
 	}
 	
 	else if(average<55 && average>=40)
 	{
-		System.out.println("D Grade");
+		System.out.println("D Grade with Third class");
+		System.out.println("  ");
+		System.out.println("Successfully Completed");
 	}
 	else
 	{
 		System.out.println("Fail");
 	}
-	System.out.println(" ");
-	System.out.println("Successfully Completed");
 	System.out.println("   ");
 	System.out.println("All the best for future ");
 	}
@@ -277,7 +293,6 @@ public class School {
 		g.school(s);
 		
 		f.marks();
-		
 	}
 
 }
