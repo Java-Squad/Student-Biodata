@@ -1,0 +1,78 @@
+
+
+                       Student Marks Sheet
+________________________________________________________________________________________________
+
+
+Enter First Name                                        
+
+
+Enter Last Name                                          
+ 
+ 
+Enter Father Name                                        
+
+ 
+Enter Mother Name                                        
+
+
+Enter Gender                                              
+ 
+ 
+Enter the Age                                            
+
+
+Enter the Place                                           
+ 
+ 
+Enter Enrollment No                                         
+
+
+
+Student  First Name                                    JOHN
+
+Student  Last Name                                     RAMBO
+
+Father Name                                            MIKE
+ 
+Mother Name                                            ALEXA
+ 
+Gender                                                 MALE
+ 
+Student  Age                                           36
+
+Place                                                  US
+ 
+Enrollment No                                          5864525
+ 
+ 
+ 
+Total Subjects:    
+ 
+ 
+ 
+                               Subject Marks
+ 
+ 
+ENGLISH  Marks 80.0
+ 
+SANSKRIT  Marks 86.0
+ 
+MATHEMATICS  Marks 56.0
+ 
+CHEMISTRY  Marks 78.0
+ 
+PHYSICS  Marks 90.0
+ 
+TELUGU  Marks 65.0
+ 
+SOCIAL  Marks 69.0
+ 
+ 
+Percentage 74.85714285714288
+ 
+B Grade
+ 
+Successfully Complete the Degree
+   
+All the best for future 
