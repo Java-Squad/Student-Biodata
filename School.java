@@ -102,14 +102,14 @@ class Frame
 	
 		System.out.println("");
 		System.out.println("");
-		System.out.println("                       Student Marks Sheet");
+		System.out.println("                       STUDENT MARKS SHEET INTERMEDIATE");
 		
 		System.out.println("________________________________________________________________________________________________");
 		System.out.println("");
 		System.out.println("");
 	}
 	
-	public static void marks()
+	public static <myroom> void marks()
 	{
 	
     try
@@ -184,7 +184,7 @@ class Frame
 		System.out.println("Fail");
 	}
 	System.out.println(" ");
-	System.out.println("Successfully Completed the Degree");
+	System.out.println("Successfully Completed");
 	System.out.println("   ");
 	System.out.println("All the best for future ");
 	}
@@ -276,7 +276,7 @@ public class School {
 		Generate g=new Generate();
 		g.school(s);
 		
-		f.marks();	
+		f.marks();
 		
 	}
 
