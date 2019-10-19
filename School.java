@@ -1,7 +1,15 @@
 import java.util.Scanner;
+import java.security.*;
+
 
 class Sample
 {
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getFaname() {
 		return faname;
 	}
@@ -29,6 +37,7 @@ class Sample
 	public String gender;
 	public int age;
 	public String place;
+	public int id;
 	
 	
 	public String getFname() {
@@ -79,6 +88,8 @@ class Generate
 		System.out.println("Student  Age                                           "+s.getAge());
 		System.out.println("");
 		System.out.println("Place                                                  "+s.getPlace());
+		System.out.println(" ");
+		System.out.println("Enrollment No                                          "+s.getId());
 	}
 }
 
@@ -93,7 +104,7 @@ class Frame
 		System.out.println("");
 		System.out.println("                       Student Marks Sheet");
 		
-		System.out.println("");
+		System.out.println("________________________________________________________________________________________________");
 		System.out.println("");
 		System.out.println("");
 	}
@@ -101,6 +112,8 @@ class Frame
 	public static void marks()
 	{
 	
+    try
+    {
 	Scanner sa=new Scanner(System.in);
 	System.out.println(" ");
 	System.out.println(" ");
@@ -170,14 +183,20 @@ class Frame
 	{
 		System.out.println("Fail");
 	}
-	
-	System.out.println("Successfully Complete the Degree");
+	System.out.println(" ");
+	System.out.println("Successfully Completed the Degree");
 	System.out.println("   ");
 	System.out.println("All the best for future ");
 	}
+	
+	catch(ArrayIndexOutOfBoundsException e)
+	{
+		System.out.println("  ");
+		
+	}
 		
 	
-	
+	}
 }
 
 
@@ -208,13 +227,13 @@ public class School {
 		System.out.println(" ");
 		System.out.println(" ");
 		System.out.println(" ");
-		System.out.print("Enter Father's Name                                     ");
+		System.out.print("Enter Father Name                                       ");
 		String faname=sc.nextLine();
 		
 		System.out.println(" ");
 		System.out.println("");
 		System.out.println(" ");
-		System.out.print("Enter Mother's Name                                     ");
+		System.out.print("Enter Mother Name                                       ");
 		String mname=sc.nextLine();
 		System.out.println(" ");
 		System.out.println("");
@@ -236,6 +255,13 @@ public class School {
 		System.out.print("Enter the Place                                          ");
 		String place=sc.next();
 		
+		System.out.println(" ");
+		System.out.println(" ");
+		System.out.println(" ");
+		
+		System.out.print("Enter Enrollment No                                      ");
+		int id=sc.nextInt();
+		
 		Sample s=new Sample();
 		s.setFname(fname);
 		s.setLname(lname);
@@ -244,6 +270,7 @@ public class School {
 		s.setGender(gender);
 		s.setAge(age);
 		s.setPlace(place);
+		s.setId(id);
 		
 		
 		Generate g=new Generate();
